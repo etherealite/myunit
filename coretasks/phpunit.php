@@ -19,3 +19,8 @@ require path('sys').'core.php';
 // Start the default bundle.
 // --------------------------------------------------------------
 Laravel\Bundle::start(DEFAULT_BUNDLE);
+
+// --------------------------------------------------------------
+// Set the default Laravel environment
+// --------------------------------------------------------------
+Request::set_env('testing');
